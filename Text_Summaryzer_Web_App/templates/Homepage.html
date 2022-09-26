@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Text Summaryzer</title>
+
+  <link rel="shortcut icon" type="image" href="https://thumbs.dreamstime.com/b/p-logo-147236897.jpg">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="navbar-fixed">
+		<nav class="blue darken-4" style="height:80px;padding:10px;" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="{{url_for('Homepage')}}" class="brand-logo">Summaryzer</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="{{url_for('index')}}"> Text Summaryzer</a></li>
+					<li><a href="{{url_for('compare_summary')}}">Compare Summarizers</a></li>
+					<li><a href="{{url_for('analyzer')}}">Text Analyzer</a></li>
+					<li><a href="#aboutapp">About</a></li>
+					<li><a href="{{url_for('Homepage')}}"><i class="fa fa-home fa-1x"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="imgslider">
+		<div class="banner1">
+			<img class="responsive-img" style="width:1350px;height:540px;" src="https://static.wixstatic.com/media/4aa710_b3779d4bcdd04646bb53135b6dc42fe7~mv2_d_5616_3744_s_4_2.jpg/v1/fill/w_1000,h_667,al_c,q_90,usm_0.66_1.00_0.01/4aa710_b3779d4bcdd04646bb53135b6dc42fe7~mv2_d_5616_3744_s_4_2.jpg">
+		</div>
+		<div class="banner2">
+			<img class="responsive-img" style="width:1350px;height:540px;" src="https://image.slidesharecdn.com/retinadisplay-120612130107-phpapp02/95/retina-display-textures-13-728.jpg?cb=1339541551">
+		</div>
+		<div class="banner3">
+			<img class="responsive-img" style="width:1350px;height:540px;" src="https://analyticsindiamag.com/wp-content/uploads/2020/03/seq2seq-text-summarization.png">
+		</div>
+		<div class="banner4">
+			<img class="responsive-img" style="width:1350px;height:540px;" src="https://miro.medium.com/max/1000/1*ji9DNz61LMf3P2azI1yTMw.png">
+		</div>
+	</div>	
+	<br/><br/>
+	
+	<div class="modules">
+		<div class="row" style="margin-top:550px">
+			<div class="column">
+				<center><h2 style="margin-top:100px">Text Summaryzer</h2>
+				<h6>Text Summaryzer is used to summarize a large text into a small meaningful text which helps user to understand the meaning of that text easily. It is also time-saving because instead of reading a large text of data, user can just summarize it and then can read that small yet meaningful text which contains all important points of that large text of data.</h6>
+				<a href="{{url_for('index')}}"><button class="card-btn">Summarize &rarr;</button></a></center>
+			</div>
+			<div class="column">
+				<img src="https://www.vennify.ai/content/images/2021/06/text-sum-thumbnail.png" style="width:100%;height:400px;">
+			</div>
+		</div>
+		<br/>
+		
+		<div class="row">
+			<div class="column">
+				<img src="https://thumbs.dreamstime.com/b/word-writing-text-compare-business-concept-estimate-measure-note-similarities-dissimilarities-130957312.jpg" style="width:100%;height:400px;">
+			</div>
+			<div class="column">
+				<center><h2 style="margin-top:100px">Compare Summarizers</h2>
+				<h6>User can also compare different text summarizers which are created using different libraries and then select the best one from that summarizer’s according to user. </h6>
+				<a href="{{url_for('compare_summary')}}"><button class="card-btn">Compare &rarr;</button></a></center>
+			</div>
+		</div>
+		<br/>
+		
+		<div class="row">
+			<div class="column">
+				<center><h2 style="margin-top:100px">Text Analyzer</h2>
+				<h6>Text Analyzer is used to analyze the large text of data and then find important words or tokens from it and provide meanings of that words which helps user for clear and deep understandings of that text.</h6>
+				<a href="{{url_for('analyzer')}}"><button class="card-btn">Analyze &rarr;</button></a></center>
+			</div>
+			<div class="column">
+				<img src="https://thumbs.dreamstime.com/b/analyze-closeup-29666950.jpg" style="width:100%;height:400px;">
+			</div>
+		</div>
+		<br/>
+	</div>
+	
+	<div class="container">
+		<img style="width:300px;height:200px;" src="https://media1.giphy.com/media/xT9IgxJXKgMD96peHC/200.gif">
+		<img style="width:300px;height:200px;" src="https://media.giphy.com/media/l3V0Aa6GqD255NzGw/giphy.gif">
+		<img style="width:300px;height:200px;" src="https://media4.giphy.com/media/dsKnRuALlWsZG/200w.gif?cid=82a1493bz2qd102mohslgjp79w9kx0y4khe910ss333qxfli&rid=200w.gif&ct=g">
+	</div>	  
+	
+	<br/>
+	<footer class="page-footer black darken-4">
+		<div class="container" id="aboutapp">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">About Text Summaryzer App</h5>
+					<hr>
+					<p class="grey-text text-lighten-4">
+						My Name is Rithik Swargam. </br> 
+						Currently studying in TYIT from Jai Hind College. <br>
+						This is My TYIT Project - Text Summaryzer Web App. <br>
+						This Text Summaryzer Web app is used to summarize A large text into a small meaningful text. <br>
+						This project is created using Python libraries like Spacy, NLTK, Gensim, Sumy and Flask. </p>
+				</div> 
+				<div class="col l6 s12">
+					<h5 class="white-text">Address</h5>
+					<hr>
+					<span class="fa fa-map-marker">&nbsp;</span>
+					<span class="white-text"> Worli, Mumbai, Maharashtra, India. </span>
+					<br/>
+					<span class="fa fa-phone">&nbsp;</span>
+					<span class="white-text"> +91 9004565911 </span>
+					<br/>
+					<span class="fa fa-envelope">&nbsp;</span>
+					<span class="white-text"> swargam.rithik.19bit052@gmail.com </span>
+					
+					<h5 class="white-text">Social Media</h5>
+					<hr>
+					<ul>
+						<a href="https://www.facebook.com" target="_blank" class="white-text">
+							<i class="fab fa-facebook fa-2x"></i>
+						</a>&nbsp;
+						<a href="https://www.linkedin.com" target="_blank" class="white-text">
+							<i class="fab fa-linkedin fa-2x"></i>
+						</a>&nbsp;
+						<a href="https://www.twitter.com" target="_blank" class="white-text">
+							<i class="fab fa-twitter fa-2x"></i>
+						</a>&nbsp;
+						<a href="https://www.youtube.com" target="_blank" class="white-text">
+							<i class="fab fa-youtube-square fa-2x"></i>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<center>
+		<div class="footer-copyright blue darken-4">
+			<div class="container">
+				<span class="white-text"><span class="fa fa-copyright"></span><span> 2022 All rights reserved | </span></span>
+				<span class="white-text"> Created By Rithik Swargam.</span>
+			</div>
+		</div>
+		</center>
+	</footer>
+
+</body>
+</html>
